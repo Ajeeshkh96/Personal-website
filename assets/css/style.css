@@ -12,21 +12,15 @@
 body {
   font-family: "Open Sans", sans-serif;
   background-color: #040404;
-  color: #ffffff;
+  color: #fff;
   position: relative;
-  background: transparent;
-  overflow:   scroll;
+  /* background: transparent; */
 }
-::-webkit-scrollbar {
-    width: 0px;
-    background: transparent; /* make scrollbar transparent */
-}
+
 body::before {
   content: "";
   position: fixed;
-  background: #000000;
-  /* background-image: url("assets/img/b_w_pic.webp"); */
-  background-repeat: no-repeat;
+  background: #00000085 url("../img/b_w_pic.webp") top right no-repeat;
   background-size: contain;
   left: 0;
   right: 0;
@@ -283,7 +277,7 @@ h6 {
   top: 15px;
 }
 
-@media (max-width: 374px) {
+@media (max-width: 991px) {
   .mobile-nav-toggle {
     display: block;
   }
@@ -1188,10 +1182,4 @@ section .container {
 
 .credits a:hover {
   color: #fff;
-}
-
-.mypic
-{
-  width: 350px;
-  height: 404px;
 }
