@@ -12,7 +12,7 @@
 body {
   font-family: "Open Sans", sans-serif;
   background-color: #040404;
-  color: #fff;
+  color: #ffffff;
   position: relative;
   background: transparent;
   overflow:   scroll;
@@ -24,7 +24,9 @@ body {
 body::before {
   content: "";
   position: fixed;
-  background: #000000 url("../img/b&w_pic.jpg") top right no-repeat;
+  background: #000000;
+  /* background-image: url("assets/img/b_w_pic.webp"); */
+  background-repeat: no-repeat;
   background-size: contain;
   left: 0;
   right: 0;
@@ -281,7 +283,7 @@ h6 {
   top: 15px;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 374px) {
   .mobile-nav-toggle {
     display: block;
   }
@@ -1186,4 +1188,10 @@ section .container {
 
 .credits a:hover {
   color: #fff;
+}
+
+.mypic
+{
+  width: 350px;
+  height: 404px;
 }
